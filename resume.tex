@@ -1,0 +1,199 @@
+\documentclass[letterpaper]{article}
+
+\usepackage[margin=0.75in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+
+\urlstyle{same}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlist[itemize]{nosep, beginpenalty=10000}
+
+\titleformat{\section}{\bfseries}{}{0pt}{\MakeUppercase}[\titlerule]
+\titlespacing*{\section}{0pt}{\bigskipamount}{\smallskipamount}
+
+% Organization, location, role, dates; body is a list of \item
+\newenvironment{entry}[4]{%
+  \textbf{#1} \hfill \textbf{#2} \\
+  #3 \hfill \textbf{#4}
+  \begin{itemize}
+}{%
+  \end{itemize}
+  \medskip
+}
+
+\begin{document}
+
+\begin{center}
+  {\Large\bfseries Yiyu Zhou} \\[\smallskipamount]
+  \itshape
+  San Francisco, CA \\
+  +1 (216) 334-6677 \textbar{}
+  \href{mailto:yzhou155@dons.usfca.edu}{yzhou155@dons.usfca.edu} \textbar{}
+  \href{mailto:yiyu@yiyuzhou.io}{yiyu@yiyuzhou.io} \\
+  \url{https://linkedin.com/in/yiyuzhou216} \textbar{}
+  \url{https://github.com/yzhou216} \textbar{}
+  \url{https://yiyuzhou.io}
+\end{center}
+
+\section*{Education}
+
+\begin{entry}{University of San Francisco}{San Francisco, CA}
+  {B.S. in Computer Science, Minor in Music}{Expected May 2027}
+  \item Activities: ACM, Martín-Baró Scholars Program, University Choir,
+    ASUSF Voices, NCBA Club Baseball
+\end{entry}
+
+\section*{Technical Experience}
+
+\begin{entry}{University of San Francisco, Performing Arts and Social Justice}
+  {San Francisco, CA}
+  {AV Systems Administrator, Sound and Lighting Engineer}{Jan 2025 - Present}
+  \item Administer the university's Q-SYS AV control platform and Dante
+    audio-over-IP network.
+  \item Engineer live sound and lighting for theater, dance, and music
+    productions and rehearsals.
+\end{entry}
+
+\begin{entry}{University of San Francisco, Department of Computer Science}
+  {San Francisco, CA}
+  {System Administrator}{Summer 2024}
+  \item Administered GNU/Linux servers for the department's computer lab.
+\end{entry}
+
+\begin{entry}{University of San Francisco, Instructional Technologies and Training}
+  {San Francisco, CA}
+  {Software Developer}{Jan 2023 - Dec 2023}
+  \item Co-developed a virtual reality (VR) training simulation in Unity and
+    C\# for the university's ROTC program.
+\end{entry}
+
+\begin{entry}{Andrews Osborne Academy}{Willoughby, OH}
+  {Assistant IT Director}{Jun 2022 - Aug 2022}
+  \item Migrated the campus network to RADIUS authentication.
+  \item Provisioned and maintained devices for faculty, staff, and students.
+  \item Reorganized server rack cabling with the maintenance team.
+\end{entry}
+
+\begin{entry}{Yangzhou STEP Toys and Gifts Co., Ltd.}{Yangzhou, Jiangsu, China}
+  {Internet Consultant}{Jul 2019 - Aug 2021}
+  \item Deployed and managed US-based proxy servers for reliable access to
+    American e-commerce platforms.
+  \item Maintained the company network and provided technical support to
+    employees.
+\end{entry}
+
+\begin{entry}{China Telecom}{Yangzhou, Jiangsu, China}
+  {Assistant Cloud Service Manager (Internship)}{Jul 2020 - Aug 2020}
+  \item Managed virtualized GNU/Linux cloud servers for up to 10 clients.
+  \item Assisted with failure simulations and penetration tests of city
+    infrastructure systems.
+\end{entry}
+
+\section*{Free Software/Personal Projects}
+
+\begin{entry}{Nixpkgs}{\url{https://github.com/NixOS/nixpkgs}}
+  {Contributor and Package Maintainer}{Mar 2025 - Present}
+  \item Maintain 60+ packages in Nixpkgs, the largest software package
+    repository and the basis of NixOS.
+  \item Authored 300+ merged commits across 200+ packages, including 50+ new
+    packages.
+\end{entry}
+
+\begin{entry}{Cinq}{\url{https://github.com/yzhou216/cinq}}
+  {Creator and Maintainer}{Oct 2026 - Present}
+  \item Built a free QLab alternative in Rust for cue-based show control in
+    live theater.
+  \item Used in production by USF Performing Arts and Social Justice to run
+    cues for its theater productions.
+\end{entry}
+
+\begin{entry}{RISC-V Emulator}{\url{https://github.com/yzhou216/rv64_emu}}
+  {C, RISC-V assembly}{}
+  \item Wrote a 64-bit RISC-V emulator with instruction profiling and cache
+    simulation.
+\end{entry}
+
+\begin{entry}{RISC-V Processor}{\url{https://github.com/yzhou216/rv64_cpu}}
+  {Digital, RISC-V assembly}{}
+  \item Designed a single-cycle 64-bit RISC-V processor in a digital logic
+    simulator.
+\end{entry}
+
+\section*{Skills}
+
+\begin{itemize}
+  \item \textbf{Languages:} Rust, C, C\#, Java, Haskell, Nix,
+    Lisp (Common Lisp, Emacs Lisp, Guile Scheme, Racket)
+  \item \textbf{Systems and Cloud:} GNU/Linux, NixOS, FreeBSD, OpenWrt, AWS,
+    Google Cloud, Azure, Hetzner
+  \item \textbf{Development:} Git, GCC, GDB, LLVM, Make, glibc, Vim,
+    GNU Emacs, Org Mode, \LaTeX
+  \item \textbf{Computer Architecture:} RISC-V (RV64), pipelining, hazard
+    detection, caches, digital logic design
+  \item \textbf{Frameworks and Engines:} Bevy (Rust game engine), iced (Rust GUI
+    framework), Unity
+  \item \textbf{Audio, Stage, and Media:} Q-SYS, Dante, QLab, live sound,
+    stage lighting, LilyPond, GIMP, Kdenlive
+  \item \textbf{Spoken Languages:} English, Mandarin Chinese (bilingual)
+\end{itemize}
+
+\section*{Additional Experience}
+
+\begin{entry}{University of San Francisco, Modern and Classical Languages}
+  {San Francisco, CA}
+  {Chinese Conversation Peer Tutor}{Jan 2026 - Present}
+  \item Lead Mandarin Chinese conversation practice for 60+ students, in
+    class and in outside tutoring sessions.
+\end{entry}
+
+\begin{entry}{University of San Francisco, Student Housing and Residential Education}
+  {San Francisco, CA}
+  {Summer Guest Host}{Jun 2023 - Present}
+  \item Manage front desk operations, guest services, and building security
+    for the summer residence halls.
+\end{entry}
+
+\begin{entry}{University of San Francisco, Student Housing and Residential Education}
+  {San Francisco, CA}
+  {Community Assistant}{Jan 2023 - Dec 2024}
+  \item Staffed the residence hall front desk, assisting residents and
+    visitors while maintaining building security.
+  \item Supported residents and helped build hall communities.
+\end{entry}
+
+\begin{entry}{Vittorio's Buon Appetito}{Wickliffe, OH}
+  {Cook and Dishwasher}{Jun 2022 - Aug 2022}
+  \item Cooked menu items to order, washed dishes, and kept the kitchen
+    clean.
+\end{entry}
+
+\section*{Volunteer and Leadership}
+
+\begin{entry}{University of San Francisco}{San Francisco, CA}
+  {Food Pantry Volunteer and Music Technician}{Sep 2022 - Present}
+  \item Distribute fresh produce to reduce food insecurity on campus and
+    advise pantry users on preparing it.
+  \item Engineer live sound for collaborative music performances.
+\end{entry}
+
+\begin{entry}{Groceries for Seniors}{San Francisco, CA}
+  {Volunteer}{Sep 2022 - Nov 2023}
+  \item Sorted donated produce and packed grocery bags for seniors.
+\end{entry}
+
+\begin{entry}{Andrews Osborne Academy}{Willoughby, OH}
+  {Peer Tutor}{Aug 2021 - Jun 2022}
+  \item Tutored students in grades 7-12 in mathematics, from Pre-Algebra
+    through AP Calculus.
+\end{entry}
+
+\begin{entry}{Andrews Osborne Academy}{Willoughby, OH}
+  {Resident Assistant}{Aug 2021 - Jun 2022}
+  \item Supervised 30+ boarding students; planned and led weekend trips and
+    activities.
+\end{entry}
+
+\end{document}
